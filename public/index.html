@@ -24,244 +24,272 @@
   <body>
     <div class="app expand">
       <div class="app__background expand"></div>
-      <div class="app__content scrollbar expand">
-        <div class="content">
+      <div class="app__wrapper">
+        <div class="app__content scrollbar expand">
+          <div class="content">
 
-          <section class="playlist">
-            <div class="playlist__cover">
-              <img src="/assets/vini-maia-poeira-estelar-cover.jpg"
-                   alt="Capa do álbum Vini Maia - Poeira Estelar. Simio trajado de astronalta tocando violão no espaço."
-                   class="playlist__cover__img" />
-              <div class="playlist__cover__songtitle"></div>
-            </div>
-            <div class="playlist__tracklist">
-
-              <a href="/media/Vini Maia - Poeira Estrelar - 1 - Poeira Estrelar.mp3" class="track" target="_blank" aria-labelledby="track1">
-                <div class="track__number">1</div>
-                <button type="button"
-                        aria-hidden="true"
-                        tabindex="-1"
-                        class="track__play-button">
-                  <img src="/assets/icon-play.svg"
-                       class="track__play-button__image"
-                       alt="Ícone de Botão de Play"
-                       tabindex="-1"
-                       aria-hidden="true" />
-                  <span class="sr-only">Play</span>
-                </button>
-                <div class="track__name" id="track1">
-                  Poeira Estelar
-                </div>
-                <div class="track__duration">
-                  2:28
-                </div>
-              </a>
-
-              <a href="/media/Vini Maia - Poeira Estrelar - 2 - O Mundo e o Verso.mp3" class="track" target="_blank" aria-labelledby="track2">
-                <div class="track__number">2</div>
-                <button type="button"
-                        aria-hidden="true"
-                        tabindex="-1"
-                        class="track__play-button">
-                  <img src="/assets/icon-play.svg"
-                       class="track__play-button__image"
-                        alt="Ícone de Botão de Play"
-                        tabindex="-1"
-                        aria-hidden="true" />
-                  <span class="sr-only">Play</span>
-                </button>
-                <div class="track__name" id="track2">
-                  O Mundo e o Verso
-                </div>
-                <div class="track__duration">
-                  2:47
-                </div>
-              </a>
-
-              <a href="/media/Vini Maia - Poeira Estrelar - 3 - Money Pra Quem Quer.mp3" class="track" target="_blank" aria-labelledby="track3">
-                <div class="track__number">3</div>
-                <button type="button"
-                        aria-hidden="true"
-                        tabindex="-1"
-                        class="track__play-button">
-                  <img src="/assets/icon-play.svg"
-                       class="track__play-button__image"
-                        alt="Ícone de Botão de Play"
-                        tabindex="-1"
-                        aria-hidden="true" />
-                  <span class="sr-only">Play</span>
-                </button>
-                <div class="track__name" id="track3">
-                  Money pra Quem Quer
-                </div>
-                <div class="track__duration">
-                  2:34
-                </div>
-              </a>
-
-              <a href="/media/Vini Maia - Poeira Estrelar - 4 - Utopia Racional.mp3" class="track" target="_blank" aria-labelledby="track4">
-                <div class="track__number">4</div>
-                <button type="button"
-                        aria-hidden="true"
-                        tabindex="-1"
-                        class="track__play-button">
-                  <img src="/assets/icon-play.svg"
-                       class="track__play-button__image"
-                        alt="Ícone de Botão de Play"
-                        tabindex="-1"
-                        aria-hidden="true" />
-                  <span class="sr-only">Play</span>
-                </button>
-                <div class="track__name" id="track4">
-                  Utopia Racional
-                </div>
-                <div class="track__duration">
-                  4:13
-                </div>
-              </a>
-
-              <a href="/media/Vini Maia - Poeira Estrelar - 5 - Só Para Te Lembrar da Sorte.mp3" class="track" target="_blank" aria-labelledby="track5">
-                <div class="track__number">5</div>
-                <button type="button"
-                        aria-hidden="true"
-                        tabindex="-1"
-                        class="track__play-button">
-                  <img src="/assets/icon-play.svg"
-                       class="track__play-button__image"
-                        alt="Ícone de Botão de Play"
-                        tabindex="-1"
-                        aria-hidden="true" />
-                  <span class="sr-only">Play</span>
-                </button>
-                <div class="track__name" id="track5">
-                  Só pra te Lembrar da Sorte
-                </div>
-                <div class="track__duration">
-                  3:08
-                </div>
-              </a>
-
-              <a href="/media/Vini Maia - Poeira Estrelar - 6 - Beira Mar.mp3" class="track" target="_blank" aria-labelledby="track6">
-                <div class="track__number">6</div>
-                <button type="button"
-                        aria-hidden="true"
-                        tabindex="-1"
-                        class="track__play-button">
-                  <img src="/assets/icon-play.svg"
-                       class="track__play-button__image"
-                        alt="Ícone de Botão de Play"
-                        tabindex="-1"
-                        aria-hidden="true" />
-                  <span class="sr-only">Play</span>
-                </button>
-                <div class="track__name" id="track6">
-                  Beira Mar
-                </div>
-                <div class="track__duration">
-                  3:28
-                </div>
-              </a>
-
-            </div>
-          </section>
-
-          <section class="bio">
-            <img src="/assets/vini-maia.jpg"
-                 class="bio__cover"
-                 alt="Vinícius Maia" />
-            <div class="bio__content">
-              <h2 class="section-title">Bio</h2>
-              <div class="bio__content__text">
-                Vini Maia é músico e compositor intependente, nascido na cidade de 
-                São Gonçalo do Pará, no interior de Minas Gerais. Suas músicas
-                têm influência de diversos gêneros, principalmente MPB e Rock. 
-                Integer quis leo libero. Duis vel efficitur est, id dictum velit.
-                Praesent porttitor, sem nec faucibus pharetra, nisl sapien commodo
-                purus, in semper urna sem in magna.
+            <section class="playlist">
+              <div class="playlist__cover">
+                <img src="/assets/vini-maia-poeira-estelar-cover.jpg"
+                    alt="Capa do álbum Vini Maia - Poeira Estelar. Simio trajado de astronalta tocando violão no espaço."
+                    class="playlist__cover__img" />
+                <div class="playlist__cover__songtitle"></div>
               </div>
-            </div>
-          </section>
+              <div class="playlist__tracklist">
 
-          <section class="links">
-            <div class="links__listen">
-              <h2 class="section-title">Ouça no...</h2>
-              <ul class="links-list">
-                <li class="links-list__item">
-                  <a href="https://www.youtube.com/channel/UCgBK30y7aM2gAhAK5blzgbg" target="_blank">
-                    <img src="/assets/flaticon/youtube.svg" alt="Youtube Icon" aria-hidden="true" />
-                    <span>Youtube</span>
-                  </a>
-                </li>
-                <li class="links-list__item">
-                  <a href="https://open.spotify.com/artist/248BOfB9x8x1UtLIQi48Kd" target="_blank">
-                    <img src="/assets/flaticon/spotify.svg" alt="Spotify Icon" aria-hidden="true" />
-                    <span>Spotify</span>
-                  </a>
-                </li>
-                <li class="links-list__item">
-                  <a href="https://www.apple.com/itunes/" target="_blank">
-                    <img src="/assets/flaticon/applemusic.svg" alt="iTunes Icon" aria-hidden="true" />
-                    <span>iTunes / Apple Music</span>
-                  </a>
-                </li>
-                <li class="links-list__item">
-                  <a href="https://play.google.com/store/music/artist/Vini_Maia?id=Awvqp3eiumk33fiftvbcjevo53e" target="_blank">
-                    <img src="/assets/flaticon/playstore.svg" alt="Playstore Icon" aria-hidden="true" />
-                    <span>Google Play / Google Music</span>
-                  </a>
-                </li>
-                <li class="links-list__item">
-                  <a href="https://www.deezer.com/br/artist/14006545" target="_blank">
-                    <img src="/assets/flaticon/deezer.svg" alt="Deezer Icon" aria-hidden="true" />
-                    <span>Deezer</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="links__contact">
-              <h2 class="section-title">Entre em contato</h2>
-              <ul class="links-list">
-                <li class="links-list__item">
-                  <a href="https://www.facebook.com/vinicius.maia.794/" target="_blank">
-                    <img src="/assets/flaticon/facebook.svg" alt="Facebook Icon" aria-hidden="true" />
-                    <span>Facebook</span>
-                  </a>
-                </li>
-                <li class="links-list__item">
-                  <a href="https://twitter.com/vin_maia" target="_blank">
-                    <img src="/assets/flaticon/twitter.svg" alt="Twitter Icon" aria-hidden="true" />
-                    <span>Twitter</span>
-                  </a>
-                </li>
-                <li class="links-list__item">
-                  <a href="mailto:vinimaiacontato@gmail.com">
-                      <img src="/assets/flaticon/email.svg" alt="E-mail Icon" aria-hidden="true" />
-                      <span>E-mail</span>
+                <a href="/media/Vini Maia - Poeira Estrelar - 1 - Poeira Estrelar.mp3" class="track" target="_blank" aria-labelledby="track1">
+                  <div class="track__number">1</div>
+                  <button type="button"
+                          aria-hidden="true"
+                          tabindex="-1"
+                          class="track__play-button">
+                    <img src="/assets/icon-play.svg"
+                        class="track__play-button__image"
+                        alt="Ícone de Botão de Play"
+                        tabindex="-1"
+                        aria-hidden="true" />
+                    <span class="sr-only">Play</span>
+                  </button>
+                  <div class="track__name" id="track1">
+                    Poeira Estelar
+                  </div>
+                  <div class="track__duration">
+                    2:28
+                  </div>
+                </a>
+
+                <a href="/media/Vini Maia - Poeira Estrelar - 2 - O Mundo e o Verso.mp3" class="track" target="_blank" aria-labelledby="track2">
+                  <div class="track__number">2</div>
+                  <button type="button"
+                          aria-hidden="true"
+                          tabindex="-1"
+                          class="track__play-button">
+                    <img src="/assets/icon-play.svg"
+                        class="track__play-button__image"
+                          alt="Ícone de Botão de Play"
+                          tabindex="-1"
+                          aria-hidden="true" />
+                    <span class="sr-only">Play</span>
+                  </button>
+                  <div class="track__name" id="track2">
+                    O Mundo e o Verso
+                  </div>
+                  <div class="track__duration">
+                    2:47
+                  </div>
+                </a>
+
+                <a href="/media/Vini Maia - Poeira Estrelar - 3 - Money Pra Quem Quer.mp3" class="track" target="_blank" aria-labelledby="track3">
+                  <div class="track__number">3</div>
+                  <button type="button"
+                          aria-hidden="true"
+                          tabindex="-1"
+                          class="track__play-button">
+                    <img src="/assets/icon-play.svg"
+                        class="track__play-button__image"
+                          alt="Ícone de Botão de Play"
+                          tabindex="-1"
+                          aria-hidden="true" />
+                    <span class="sr-only">Play</span>
+                  </button>
+                  <div class="track__name" id="track3">
+                    Money pra Quem Quer
+                  </div>
+                  <div class="track__duration">
+                    2:34
+                  </div>
+                </a>
+
+                <a href="/media/Vini Maia - Poeira Estrelar - 4 - Utopia Racional.mp3" class="track" target="_blank" aria-labelledby="track4">
+                  <div class="track__number">4</div>
+                  <button type="button"
+                          aria-hidden="true"
+                          tabindex="-1"
+                          class="track__play-button">
+                    <img src="/assets/icon-play.svg"
+                        class="track__play-button__image"
+                          alt="Ícone de Botão de Play"
+                          tabindex="-1"
+                          aria-hidden="true" />
+                    <span class="sr-only">Play</span>
+                  </button>
+                  <div class="track__name" id="track4">
+                    Utopia Racional
+                  </div>
+                  <div class="track__duration">
+                    4:13
+                  </div>
+                </a>
+
+                <a href="/media/Vini Maia - Poeira Estrelar - 5 - Só Para Te Lembrar da Sorte.mp3" class="track" target="_blank" aria-labelledby="track5">
+                  <div class="track__number">5</div>
+                  <button type="button"
+                          aria-hidden="true"
+                          tabindex="-1"
+                          class="track__play-button">
+                    <img src="/assets/icon-play.svg"
+                        class="track__play-button__image"
+                          alt="Ícone de Botão de Play"
+                          tabindex="-1"
+                          aria-hidden="true" />
+                    <span class="sr-only">Play</span>
+                  </button>
+                  <div class="track__name" id="track5">
+                    Só pra te Lembrar da Sorte
+                  </div>
+                  <div class="track__duration">
+                    3:08
+                  </div>
+                </a>
+
+                <a href="/media/Vini Maia - Poeira Estrelar - 6 - Beira Mar.mp3" class="track" target="_blank" aria-labelledby="track6">
+                  <div class="track__number">6</div>
+                  <button type="button"
+                          aria-hidden="true"
+                          tabindex="-1"
+                          class="track__play-button">
+                    <img src="/assets/icon-play.svg"
+                        class="track__play-button__image"
+                          alt="Ícone de Botão de Play"
+                          tabindex="-1"
+                          aria-hidden="true" />
+                    <span class="sr-only">Play</span>
+                  </button>
+                  <div class="track__name" id="track6">
+                    Beira Mar
+                  </div>
+                  <div class="track__duration">
+                    3:28
+                  </div>
+                </a>
+
+              </div>
+            </section>
+
+            <section class="bio">
+              <img src="/assets/vini-maia.jpg"
+                  class="bio__cover"
+                  alt="Vinícius Maia" />
+              <div class="bio__content">
+                <h2 class="section-title">Bio</h2>
+                <div class="bio__content__text">
+                  Vini Maia é músico e compositor intependente, nascido na cidade de 
+                  São Gonçalo do Pará, no interior de Minas Gerais. Suas músicas
+                  têm influência de diversos gêneros, principalmente MPB e Rock. 
+                  Problemas sociais e críticas à vida moderna são temas recorrentes
+                  em suas letras.
+                </div>
+              </div>
+            </section>
+
+            <section class="links">
+              <div class="links__listen">
+                <h2 class="section-title">Ouça no...</h2>
+                <ul class="links-list">
+                  <li class="links-list__item">
+                    <a href="https://www.youtube.com/channel/UCgBK30y7aM2gAhAK5blzgbg" target="_blank">
+                      <img src="/assets/flaticon/youtube.svg" alt="Youtube Icon" aria-hidden="true" />
+                      <span>Youtube</span>
                     </a>
-                </li>
-              </ul>
-            </div>
-          </section>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="https://open.spotify.com/artist/248BOfB9x8x1UtLIQi48Kd" target="_blank">
+                      <img src="/assets/flaticon/spotify.svg" alt="Spotify Icon" aria-hidden="true" />
+                      <span>Spotify</span>
+                    </a>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="https://www.apple.com/itunes/" target="_blank">
+                      <img src="/assets/flaticon/applemusic.svg" alt="iTunes Icon" aria-hidden="true" />
+                      <span>iTunes / Apple Music</span>
+                    </a>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="https://play.google.com/store/music/artist/Vini_Maia?id=Awvqp3eiumk33fiftvbcjevo53e" target="_blank">
+                      <img src="/assets/flaticon/playstore.svg" alt="Playstore Icon" aria-hidden="true" />
+                      <span>Google Play / Google Music</span>
+                    </a>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="https://www.deezer.com/br/artist/14006545" target="_blank">
+                      <img src="/assets/flaticon/deezer.svg" alt="Deezer Icon" aria-hidden="true" />
+                      <span>Deezer</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="links__contact">
+                <h2 class="section-title">Entre em contato</h2>
+                <ul class="links-list">
+                  <li class="links-list__item">
+                    <a href="https://www.facebook.com/vinicius.maia.794/" target="_blank">
+                      <img src="/assets/flaticon/facebook.svg" alt="Facebook Icon" aria-hidden="true" />
+                      <span>Facebook</span>
+                    </a>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="https://twitter.com/vin_maia" target="_blank">
+                      <img src="/assets/flaticon/twitter.svg" alt="Twitter Icon" aria-hidden="true" />
+                      <span>Twitter</span>
+                    </a>
+                  </li>
+                  <li class="links-list__item">
+                    <a href="mailto:vinimaiacontato@gmail.com">
+                        <img src="/assets/flaticon/email.svg" alt="E-mail Icon" aria-hidden="true" />
+                        <span>E-mail</span>
+                      </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
 
-          <footer class="footer">
-            Vini Maia - Todos os Direitos Reservados - 2018 <br />
+            <footer class="footer">
+              Vini Maia - Todos os Direitos Reservados - 2018 <br />
 
-            Designed and developed by
-            <a href="https://github.com/thalleshmm" target="_blank">Thalles Maia</a> <br />
+              Designed and developed by
+              <a href="https://github.com/thalleshmm" target="_blank">Thalles Maia</a> <br />
 
-            Get the source code on
-            <a href="https://github.com/thalleshmm/vini" target="_blank">Github</a> <br />
-            
-            Icons designed by 
-            <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a> 
-            from <a href="https://www.flaticon.com/" target="_blank">Flaticon</a>
-          </footer>
+              Get the source code on
+              <a href="https://github.com/thalleshmm/vini" target="_blank">Github</a> <br />
+              
+              Icons designed by 
+              <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a> 
+              from <a href="https://www.flaticon.com/" target="_blank">Flaticon</a>
+            </footer>
 
-        </div>
-        <div class="player">
-          
+          </div>
         </div>
       </div>
+
+      <div class="player player--active">
+        <div class="player__container">
+          <button class="player-control play-button" aria-label="Pause">
+              <img src="/assets/icon-play.svg"
+                class="track__play-button__image"
+                alt="Ícone de Botão de Play"
+                aria-hidden="true" />
+          </button>
+          <button class="player-control play-button" aria-label="Pause">
+              <img src="/assets/icon-forward.svg"
+                class="track__play-button__image"
+                alt="Ícone de Botão de Play"
+                aria-hidden="true" />
+          </button>
+          <input class="player-control navbar"
+                 type="range"
+                 min="0"
+                 max="100"
+                 value="0"
+                 aria-label="Navegar na Música" />
+          <button class="player-control lyrics-button">
+              Letra
+          </button>
+          <div class="player-control duration-display">
+            --:--:--  
+          </div>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
