@@ -173,6 +173,26 @@ body {
   transform: translateY(2px);
 }
 
+.track__play-button__image--spin {
+  will-change: transform;
+  transform: translateY(2px) rotate(0deg);
+  animation-name: trackPlayButtonImageSpin;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes trackPlayButtonImageSpin {
+  from {
+    transform: translateY(2px) rotate(0deg);
+  }
+
+  to {
+    transform: translateY(2px) rotate(359deg);
+  }
+}
+
 .track__name {
   width: 100%;
 }

@@ -1,5 +1,6 @@
 const PLAY_ICON = '/assets/icon-play.svg';
 const PAUSE_ICON = '/assets/icon-pause.svg';
+const LOADING_ICON = '/assets/icon-loading.svg';
 
 class Track {
     constructor(domElement, id) {
@@ -7,10 +8,12 @@ class Track {
         this.$el = domElement;
         this.src = domElement.getAttribute('href');
         this.playing = false;
+        this.loading = false;
 
         this.$el.addEventListener('click', this.click.bind(this));
         window.addEventListener('audio-playing', this.onAudioPlaying.bind(this));
         window.addEventListener('audio-paused', this.onAudioPause.bind(this));
+        window.addEventListener('audio-can-play', this.onAudioCanPlay.bind(this));
     }
 
     click(evt) {
@@ -20,6 +23,9 @@ class Track {
             const event = new CustomEvent('audio-pause');
             window.dispatchEvent(event);
         } else {
+            this.loading = true;
+            this.renderPlayButton();
+
             const detail = this;
             const event = new CustomEvent('audio-play', { detail });
             window.dispatchEvent(event);
@@ -33,11 +39,23 @@ class Track {
         this.renderPlayButton();
     }
 
+    onAudioCanPlay() {
+        this.loading = false;
+        this.renderPlayButton();
+    }
+
     renderPlayButton() {
-        this.$el
-        .querySelector('.track__play-button__image')
-        .src = this.playing ?
-            PAUSE_ICON : PLAY_ICON;
+        const $el = this.$el.querySelector('.track__play-button__image');
+
+        if (this.loading) {
+            $el.src = '';
+            $el.classList.add('track__play-button__image--spin');
+            $el.src = LOADING_ICON;
+        } else {
+            $el.classList.remove('track__play-button__image--spin');
+            $el.src = this.playing ?
+                PAUSE_ICON : PLAY_ICON;
+        }
     }
 
     onAudioPause() {

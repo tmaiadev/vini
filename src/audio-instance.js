@@ -11,6 +11,7 @@ class AudioInstance {
         this.audio.addEventListener('pause', this.paused.bind(this));
         this.audio.addEventListener('timeupdate', this.timeUpdate.bind(this));
         this.audio.addEventListener('ended', this.ended.bind(this));
+        this.audio.addEventListener('canplay', this.canPlay.bind(this));
     }
 
     play(evt) {
@@ -52,6 +53,11 @@ class AudioInstance {
 
     ended() {
         const event = new CustomEvent('audio-ended');
+        window.dispatchEvent(event);
+    }
+
+    canPlay() {
+        const event = new CustomEvent('audio-can-play');
         window.dispatchEvent(event);
     }
 }
