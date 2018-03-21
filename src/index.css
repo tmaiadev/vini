@@ -1,6 +1,7 @@
 body {
   overflow: hidden;
   background-color: #212121;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .sr-only {
@@ -80,7 +81,6 @@ body {
 
 .app__content {
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
   flex-direction: column;
   color: #FFF;
   font-size: 12px;
@@ -407,5 +407,6 @@ body {
 }
 
 .duration-display {
+  font-size: 12px;
   text-align: center;
 }

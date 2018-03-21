@@ -69,13 +69,7 @@ class Player {
             dtCurrTime.setSeconds(Math.round(currentTime));
             const fCurrTime = `${('0' + dtCurrTime.getMinutes()).slice(-2)}:${('0' + dtCurrTime.getSeconds()).slice(-2)}`;
 
-            const dtDuration = new Date();
-            dtDuration.setHours('0');
-            dtDuration.setMinutes('0');
-            dtDuration.setSeconds(Math.round(duration));
-            const fDuration = `${('0' + dtDuration.getMinutes()).slice(-2)}:${('0' + dtDuration.getSeconds()).slice(-2)}`;
-
-            this.$durationDisplay.innerHTML = `${fCurrTime}/${fDuration}`;
+            this.$durationDisplay.innerHTML = `${fCurrTime}`;
         }
     }
 
