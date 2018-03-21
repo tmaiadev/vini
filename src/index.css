@@ -103,16 +103,29 @@ body {
 
 .playlist__cover {
   display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgba(255, 255, 255, .1);
+  position: relative;
 }
 
 .playlist__cover__img {
+  display: block;
+  top: 0px;
+  left: 0px;
   width: 100%;
+  position: absolute;
 }
 
 @media (min-width: 768px) {
+  .playlist__cover {
+    padding-bottom: 0px;
+    width: 360px;
+    flex-shrink: 0;
+  }
+
   .playlist__cover__img {
-    width: 388px;
-    height: 388px;
+    width: 360px;
   }
 }
 
@@ -128,7 +141,7 @@ body {
 
 @media (min-width: 768px) {
   .playlist__tracklist {
-    height: 388px;
+    height: 360px;
   }
 }
 
@@ -139,7 +152,8 @@ body {
   color: #FFF;
   text-decoration: none;
   font-size: 14px;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .track__play-button {
@@ -175,13 +189,26 @@ body {
 
 .bio__cover {
   width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.bio__cover img {
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
 }
 
 @media (min-width: 768px) {
   .bio__cover {
-    flex-grow: 1;
-    flex-shrink: 1;
-    max-width: 350px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 360px;
+    height: 360px;
+    padding-bottom: 0px;
   }
 }
 
