@@ -336,6 +336,16 @@ body {
   height: 30px;
 }
 
+.next-button {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.next-button img {
+  height: 25px;
+}
+
 .navbar {
   flex-grow: 1;
   flex-shrink: 1;
