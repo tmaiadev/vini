@@ -48,6 +48,10 @@ displays, though, the outline will appear */
   margin-bottom: 15px;
 }
 
+.scrollbar {
+  -webkit-overflow-scrolling: touch;
+}
+
 @media (min-width: 768px) {
   .scrollbar::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
