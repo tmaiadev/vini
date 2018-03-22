@@ -167,7 +167,7 @@ displays, though, the outline will appear */
   align-items: center;
   color: #FFF;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -328,8 +328,8 @@ displays, though, the outline will appear */
 }
 
 .footer {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   padding: 15px;
   text-align: center;
   background-color: rgba(255, 255, 255, .1);
