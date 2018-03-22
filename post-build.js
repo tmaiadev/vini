@@ -17,4 +17,11 @@ fs.writeFileSync(indexPath, newIndex, { encoding: 'utf-8' });
 
 removeSync('./build/static/css');
 
+const swPath = './build/sw.js';
+const sw = fs.readFileSync(swPath, { encoding: 'utf-8' });
+const newSw = sw.replace('{{version}}', new Date() - 1);
+
+fs.unlinkSync(swPath);
+fs.writeFileSync(swPath, newSw, { encoding: 'utf-8' });
+
 console.log('DONE');
