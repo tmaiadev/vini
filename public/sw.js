@@ -1,7 +1,35 @@
-const CACHE_VERSION = `{{version}}`;
+const CACHE_VERSION = `{{cache-version}}`;
+
+var urlsToCache = [
+    '/',
+    '/assets/icon-backward.svg',
+    '/assets/icon-forward.svg',
+    '/assets/icon-loading.svg',
+    '/assets/icon-pause.svg',
+    '/assets/icon-play.svg',
+    '/assets/vini-maia-poeira-estelar-cover-mini.png',
+    '/assets/vini-maia-poeira-estelar-cover.jpg',
+    '/assets/vini-maia.jpg',
+    '/assets/flaticon/applemusic.svg',
+    '/assets/flaticon/deezer.svg',
+    '/assets/flaticon/email.svg',
+    '/assets/flaticon/facebook.svg',
+    '/assets/flaticon/playstore.svg',
+    '/assets/flaticon/spotify.svg',
+    '/assets/flaticon/twitter.svg',
+    '/assets/flaticon/youtube.svg',
+    '/static/js/main.{{js-cache-version}}.js'
+];
 
 self.addEventListener('install', e => {
     console.log('[Service Worker] installed');
+
+    e.waitUntil(
+        caches.open(CACHE_VERSION)
+        .then(cache => {
+            return cache.addAll(urlsToCache);
+        })
+    );
 });
 
 self.addEventListener('activate', () => {
