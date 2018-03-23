@@ -32,8 +32,22 @@ self.addEventListener('install', e => {
     );
 });
 
-self.addEventListener('activate', () => {
+self.addEventListener('activate', e => {
     console.log('[Service Worker] activated');
+
+    e.waitUntil(
+        caches.keys()
+        .then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(cacheName => {
+                    if (cacheName !== CACHE_VERSION) {
+                        console.log(`[Service Worker] deleting cache version ${cacheName}`);
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
+    );
 });
 
 self.addEventListener('fetch', e => {
