@@ -48,7 +48,7 @@ class Player {
     }
 
     renderPlayButton() {
-        this.$playButton.querySelector('.track__play-button__image').src = this.playing ?
+        this.$playButton.querySelector('img').src = this.playing ?
             PAUSE_ICON : PLAY_ICON;
     }
 
